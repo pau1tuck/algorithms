@@ -17,6 +17,24 @@ def bubble_sort(my_list):
     return my_list
 
 
+def bubbleSort_optimized(my_list):
+    n = len(my_list)
+    # Traverse through all array elements
+    for i in range(n):
+        swapped = False
+
+        # Last i elements are already in place
+        for j in range(0, n - i - 1):
+            # traverse the array from 0 to n-i-1
+            # Swap if the element found is greater
+            # than the next element
+            if my_list[j] > my_list[j + 1]:
+                my_list[j], my_list[j + 1] = my_list[j + 1], my_list[j]
+                swapped = True
+        if swapped == False:
+            break
+
+
 et = time.time()
 
 elapsed_time = et - st

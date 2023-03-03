@@ -1,3 +1,5 @@
+# Time complexity: O(n^2)
+
 import time
 import os
 import psutil
@@ -19,10 +21,12 @@ et = time.time()
 
 elapsed_time = et - st
 
-# Test the algorith
-array = [4, 2, 6, 5, 1, 3, 8, 7]
 
-print("Array length:", str(len(array)))
-print("CPU:", os.cpu_count(), "logical cores at", psutil.cpu_freq(), "GHz")
-print("Bubble sort:", bubble_sort(array))
-print("Execution time:", elapsed_time * 1000, "milliseconds")
+if __name__ == "__main__":
+    # Test the algorithm
+    array = [4, 2, 6, 5, 1, 3, 8, 7]
+
+    print("Array length:", str(len(array)))
+    print("CPU:", os.cpu_count(), "logical cores at", psutil.cpu_freq(), "GHz")
+    print("Bubble sort:", bubble_sort(array))
+    print("Execution time:", elapsed_time * 1000, "milliseconds")

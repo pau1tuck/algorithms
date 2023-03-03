@@ -1,3 +1,6 @@
+# Time complexity: O(n^2)
+
+
 def selection_sort(my_list):
     for i in range(len(my_list) - 1):
         min_index = i
@@ -9,3 +12,9 @@ def selection_sort(my_list):
             tmp = my_list[i]
             my_list[i] = my_list[min_index]
             my_list[min_index] = tmp
+    return my_list
+
+
+array = [4, 2, 6, 5, 1, 3, 8, 7]
+
+print(selection_sort(array))

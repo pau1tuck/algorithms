@@ -1,4 +1,11 @@
 {
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true
+    "python.linting.flake8Args": [
+        "--max-line-length=119", // Django recommendation
+    ],
+    "pylint.args": [
+        "line_length=119",
+    ]
 }

@@ -1,4 +1,6 @@
 import time
+import os
+import psutil
 
 st = time.time()
 
@@ -17,5 +19,10 @@ et = time.time()
 
 elapsed_time = et - st
 
-print(bubble_sort([4, 2, 6, 5, 1, 3, 8, 7]))
-print("Execution time:", elapsed_time, "seconds")
+# Test the algorith
+array = [4, 2, 6, 5, 1, 3, 8, 7]
+
+print("Array length:", str(len(array)))
+print("CPU:", os.cpu_count(), "logical cores at", psutil.cpu_freq(), "GHz")
+print("Bubble sort:", bubble_sort(array))
+print("Execution time:", elapsed_time * 1000, "milliseconds")

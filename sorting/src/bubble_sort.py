@@ -4,7 +4,7 @@ import time
 import os
 import psutil
 
-st = time.time()
+st = time.time()  # start time
 
 
 def bubble_sort(my_list):
@@ -31,11 +31,11 @@ def bubbleSort_optimized(my_list):
             if my_list[j] > my_list[j + 1]:
                 my_list[j], my_list[j + 1] = my_list[j + 1], my_list[j]
                 swapped = True
-        if swapped == False:
+        if not swapped:
             break
 
 
-et = time.time()
+et = time.time()  # end time
 
 elapsed_time = et - st
 

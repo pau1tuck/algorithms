@@ -24,11 +24,8 @@ def bubbleSort_optimized(my_list):
         swapped = False
 
         # Last i elements are already in place
-        for j in range(0, n - i - 1):
-            # traverse the array from 0 to n-i-1
-            # Swap if the element found is greater
-            # than the next element
-            if my_list[j] > my_list[j + 1]:
+        for j in range(0, n - i - 1):  # Traverse the array from 0 to n-i-1
+            if my_list[j] > my_list[j + 1]:  # Swap if the element found is greater than the next element
                 my_list[j], my_list[j + 1] = my_list[j + 1], my_list[j]
                 swapped = True
         if not swapped:

@@ -2,7 +2,7 @@
 
 
 def selection_sort(my_list):
-    for i in range(len(my_list) - 1):  # 1 --> 7
+    for i in range(len(my_list) - 1):  # 1 --> 8
         min_index = i  # i = 1
         for j in range(i + 1), len(my_list):  # 2 --> 8
             if my_list[j] < min_index:  # if 6 < 1

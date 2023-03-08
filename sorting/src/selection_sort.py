@@ -1,3 +1,4 @@
+# Selection Sort
 # Time complexity: O(n^2)
 
 
@@ -16,5 +17,5 @@ def selection_sort(my_list):
 
 
 array = [4, 2, 6, 5, 1, 3, 8, 7]
-
+print(str(array))
 print(selection_sort(array))
